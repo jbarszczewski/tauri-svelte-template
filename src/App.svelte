@@ -10,8 +10,14 @@
 		CardTitle,
 		Container,
 	} from 'sveltestrap';
+	import { invoke } from '@tauri-apps/api/tauri';
 
-	const handleClick = () => alert('I warned you!');
+	const handleClick = async () => {
+		const result = await invoke('my_custom_command', {
+			invokeMessage: 'I warned you!',
+		});
+		alert(result);
+	};
 
 	export let name: string;
 </script>
@@ -23,13 +29,13 @@
 				<CardTitle>Hello {name}!</CardTitle>
 			</CardHeader>
 			<CardBody>
-				<CardSubtitle>Card subtitle</CardSubtitle>
+				<CardSubtitle>Example call to Tauri</CardSubtitle>
 				<CardText>
 					Some quick example text to build on the card title and make
 					up the bulk of the card's content.
 				</CardText>
 				<Button color="danger" on:click={handleClick}
-					>Do Not Press</Button
+					>Do Not Press!!!</Button
 				>
 			</CardBody>
 			<CardFooter>Footer</CardFooter>
