@@ -29,3 +29,9 @@ yarn tauri build
 ```
 
 This will create standalone app and installer in `src-tauri/target/release` directory.
+
+## Useful links
+
+-   [Tauri](https://tauri.studio)
+-   [Svelte](https://svelte.dev)
+-   [Sveltestrap](https://sveltestrap.js.org)
