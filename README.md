@@ -6,6 +6,8 @@ To create a new project based on this template follow the official guide here: h
 
 ## Get started
 
+Before using template please see [Tauri Introduction](https://tauri.studio/en/docs/getting-started/intro) and follow instructions to setup your environment.
+
 Install the dependencies...
 
 ```bash
