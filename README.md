@@ -6,6 +6,8 @@ To create a new project based on this template follow the official guide here: h
 
 ## Get started
 
+Before using template please see [Tauri Introduction](https://tauri.studio/en/docs/getting-started/intro) and follow instructions to setup your environment.
+
 Install the dependencies...
 
 ```bash
@@ -18,7 +20,7 @@ yarn
 yarn tauri dev
 ```
 
-This will take care of running both frontend and backend of your app with watch attached to both. That means whenever you change soething in `src` (svelte frontend code) or `src-tauri` (rust backend code), it will be automatically processed and hot reloaded. To finish dev/debug mode simply close the app window.
+This will take care of running both frontend and backend of your app with watch attached to both. That means whenever you change something in `src` (svelte frontend code) or `src-tauri` (rust backend code), it will be automatically processed and hot reloaded. To finish dev/debug mode simply close the app window.
 
 ## Building and running in production mode
 
